@@ -1,0 +1,38 @@
+{
+  "name": "luis-ardon-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/main.js",
+  "scripts": {
+    "start": "ts-node -r tsconfig-paths/register src/main.ts",
+    "build": "tsc && node -r module-alias/register dist/main.js",
+    "start:prod": "node -r module-alias/register dist/main.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "express": "^4.19.2",
+    "module-alias": "^2.2.3",
+    "mysql2": "^3.10.2",
+    "reflect-metadata": "^0.2.2",
+    "tsconfig-paths": "^4.2.0",
+    "winston": "^3.13.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.3"
+  },
+  "_moduleAliases": {
+    "@hivejs/application": "dist/application",
+    "@hivejs/config": "dist/config",
+    "@hivejs/core": "dist/core",
+    "@hivejs/core/decorators": "dist/core/decorators",
+    "@hivejs/core/interfaces": "dist/core/interfaces",
+    "@hivejs/core/models": "dist/core/models",
+    "@hivejs/infrastructure": "dist/infrastructure"
+  }
+}
